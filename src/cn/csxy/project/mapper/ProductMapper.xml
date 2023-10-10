@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+	 这个Mapper的主要功能就是写sql
+	 mapper：根
+	 namespace：命令空间 （用来确定唯一）以前这个是可以不加的，现在必需加
+     namespace的值：接口的完全限定名
+ -->
+<mapper namespace="cn.csxy.project.mapper.ProductMapper">
+
+    <select id="selectusername"  resultType="User">
+		select username,password from user where username=#{username}
+		</select>
+</mapper>
+
+
